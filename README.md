@@ -2,12 +2,12 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
+# Skincare Wizard
+## CS110 Final Project  << Spring, 2024 >>
 
 ## Team Members
 
-<< List team member names >>
+Arlene Shaji
 
 ***
 
@@ -29,13 +29,14 @@
 
 ## Program Design
 
+
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Start menu
+2. Images 
+3. Pop up boxes when hovering 
+4. Prices 
+5. Other similar reccomendations
 
 ### Classes
 
