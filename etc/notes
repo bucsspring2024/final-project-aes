@@ -1,0 +1,10 @@
+#class Controller:
+    #def __init__(self):
+        #def mainloop(self):
+            #while self.running:
+                #for event in pygame.event.get():
+                    #if event.type == pygame.QUIT():
+                        #pass
+
+
+#each class in diff file
