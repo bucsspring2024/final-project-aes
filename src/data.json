@@ -1,7 +1,7 @@
 {
     "Oil Cleansers": [
         {
-            "name": "Dermalogica Precleanse Cleansing Oil",
+            "name": "Dermalogica - Precleanse Cleansing Oil",
             "price": "$49.00",
             "ingredient 1": "Vitamin E",
             "ingredient 1 function": "enhances skin's moisture and contains antioxidant properties",
@@ -11,11 +11,11 @@
             "ingredient 3 function": "antimicrobial effects prevent future breakouts",
             "skin concerns": "pores, skin irritation, acne and blemishes",
             "skin type": "normal, combination, oily",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Dermalogica.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Dermalogica.png"
         },
 
         {
-            "name": "Sulwhasoo Gentle Cleansing Oil Makeup Remover",
+            "name": "Sulwhasoo - Gentle Cleansing Oil Makeup Remover",
             "price": "$40.00",
             "ingredient 1": "Hydra Capture Complex",
             "ingredient 1 function": "complex of herbal ingredients that softens and hydrates skin",
@@ -25,11 +25,11 @@
             "ingredient 3 function": "contains diosgenin that inhibits hyperpigmentation and delays aging",
             "skin concerns": "dryness, uneven texture, oiliness",
             "skin type": "dry, combination, normal",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/sulwhasoo-gentle-cleansing-oil_front_photo_original.jpeg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/sulwhasoo-gentle-cleansing-oil_front_photo_original.png"
         },
 
         {
-            "name": "Tatcha Camellia Oil 2-in-1 Makeup Remover & Cleanser",
+            "name": "Tatcha - Camellia Oil 2-in-1 Makeup Remover & Cleanser",
             "price": "$50.00",
             "ingredient 1": "Oryza Sativa (Rice) Bran Oil",
             "ingredient 1 function": "contains fatty acids that repair the skin's barrier",
@@ -39,11 +39,11 @@
             "ingredient 3 function": "contains the polysaccharide fucoidan that inhibits factors leading to skin irritation",
             "skin concerns": "dryness",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Tatcha.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Tatcha OIl.png"
         },
 
         {
-            "name": "Skinfix Barrier+ Foaming Oil Hydrating Cleanser",
+            "name": "Skinfix - Barrier+ Foaming Oil Hydrating Cleanser",
             "price": "$30.00",
             "ingredient 1": "Triple Lipid Complex Tech",
             "ingredient 1 function": "restores essential lipids and hydrates skin",
@@ -53,11 +53,11 @@
             "ingredient 3 function": "soothes skin",
             "skin concerns": "fine lines and wrinkles, dryness, skin irritation",
             "skin type": "all skin types",
-            "image":  "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/SkinFix.jpg"
+            "image":  "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/SkinFix.png"
         },
 
         {
-            "name": "Caudalie Vinoclean Makeup Removing Cleansing Oil",
+            "name": "Caudalie - Vinoclean Makeup Removing Cleansing Oil",
             "price": "$30.00",
             "ingredient 1": "Sweet Almond Oil",
             "ingredient 1 function": "contains antibacterial and antifungal properties that reduce redness and inflammation",
@@ -67,11 +67,11 @@
             "ingredient 3 function": "contains linoleic acid that supports the skin's barrier and vitamin E that absorbs UVB light",
             "skin concerns": "dryness, dullness, uneven texture",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Caudalie.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Caudalie.png"
         },
 
         {
-            "name": "Anua Heartleaf Pore Control Cleansing Oil",
+            "name": "Anua - Heartleaf Pore Control Cleansing Oil",
             "price": "$20.00",
             "ingredient 1": "Sunflower Seed Oil",
             "ingredient 1 function": "contains linoleic acid that supports the skin's barrier and vitamin E that absorbs UVB light",
@@ -81,11 +81,11 @@
             "ingredient 3 function": "contains fatty acids to provide moisture ",
             "skin concerns": "dryness, acne and blemishes",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Anua.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Anua.png"
         },
 
         {
-            "name": "SKIN 1004 Madagascar Centella Light Cleansing Oil",
+            "name": "SKIN 1004 - Madagascar Centella Light Cleansing Oil",
             "price": "$21.00",
             "ingredient 1": "Centella Asiatica Extract",
             "ingredient 1 function": "antioxidant, antiflammatory, anticellulite, and antiaging by increasing microcirculation of blood",
@@ -95,11 +95,11 @@
             "ingredient 3 function": "immunomodulatory, wound-healing activities and anti-inflammatory properties",
             "skin concerns": "acne and blemishes",
             "skin type": "sensitve, oily",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Centella Oil.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Centella Oil.png"
         },
 
         {
-            "name": "Beauty of Joseon Ginseng Cleansing Oil",
+            "name": "Beauty of Joseon - Ginseng Cleansing Oil",
             "price": "$20.00",
             "ingredient 1": "Glycine Soja (Soybean) Oil",
             "ingredient 1 function": "contains antioxidants to protect skin from damage and fatty acids for moisture",
@@ -109,11 +109,11 @@
             "ingredient 3 function": "contains linoleic acid that supports the skin's barrier and vitamin E that absorbs UVB light",
             "skin concerns": "oiliness, pores",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/BOJ Ginseng OIL.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/BOJ Ginseng OIL.png"
         },
 
         {
-            "name": "Beauty of Joseon Radiance Cleansing Balm",
+            "name": "Beauty of Joseon - Radiance Cleansing Balm",
             "price": "$19.00",
             "ingredient 1": "Oryza Sativa (Rice) Bran Oil",
             "ingredient 1 function": "inhibits the breakdown of hylauronic acid, enhancing skin hydration",
@@ -123,11 +123,11 @@
             "ingredient 3 function": "contains avenanthramides which have anti-inflammatory effects and sooth skin",
             "skin concerns": "pores, fine lines and wrinkles, dryness",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/BOJ Balm.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/BOJ Balm.png"
         },
 
         {
-            "name": "Kose Softymo Cleansing Oil",
+            "name": "Kose - Softymo Cleansing Oil",
             "price": "$15.00",
             "ingredient 1": "Olea Europaea (Olive) Fruit Oil",
             "ingredient 1 function": "contains fatty acids to provide moisture ",
@@ -137,13 +137,13 @@
             "ingredient 3 function": "anti-inflammatory, antioxidant, and moisturizing properties",
             "skin concerns": "pores, acne and blemishes, oiliness",
             "skin type": "sensitive, oily",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Kose.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/oil_cleanser picture/Kose.png"
         }
     ],
      
     "Cleansers": [
         {
-            "name": "Youth To The People Superfood Gentle Antioxidant Refillable Cleanser",
+            "name": "Youth To The People - Superfood Gentle Antioxidant Cleanser",
             "price": "$39.00",
             "ingredient 1": "Kale",
             "ingredient 1 function": "stimulates collagen production to make skin more firm and reduces dark spots",
@@ -153,11 +153,11 @@
             "ingredient 3 function": "decreases oil production and clears pores",
             "skin concerns": "pores, acne and blemishes, oiliness",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Youth to the People.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Youth to the People.png"
         },
 
         {
-            "name": "Tatcha The Rice Wash Skin-Softening Cleanser",
+            "name": "Tatcha - The Rice Wash Skin-Softening Cleanser",
             "price": "$40.00",
             "ingredient 1": "Red Algae",
             "ingredient 1 function": "source of natural polysaccharides with water-binding properties to hydrate skin",
@@ -171,7 +171,7 @@
         },
 
         {
-            "name": "Glow Recipe Avocado Ceramide Moisture Barrier Cleanser",
+            "name": "Glow Recipe - Avocado Ceramide Moisture Barrier Cleanser",
             "price": "$28.00",
             "ingredient 1": "Ceramides",
             "ingredient 1 function": "stores fatty acids critical for a healthy skin barrier",
@@ -181,11 +181,11 @@
             "ingredient 3 function": "stimulates collagen production and has antimicrobial, antioxidant, and anti-inflammatory properties",
             "skin concerns": "dryness, skin irritation, oiliness",
             "skin type": "all skin types", 
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Glow Recipe.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Glow Recipe.png"
         },
 
         {
-            "name": "Tatcha The Matcha Cleanse Daily Clarifying Gel Cleanser",
+            "name": "Tatcha - Matcha Cleanse Daily Clarifying Gel Cleanser",
             "price": "$40.00",
             "ingredient 1": "Japanese Kyo-Matcha",
             "ingredient 1 function": "stimulates collagen production to make skin more firm and reduces inflammation",
@@ -193,13 +193,13 @@
             "ingredient 2 function": "decongests pores and supports skin turnover",
             "ingredient 3": "Japanese Mugwort",
             "ingredient 3 function": "calms irritated skin and reduces redness",
-            "skin concerns": "pores,dullness, oiliness",
+            "skin concerns": "pores, dullness, oiliness",
             "skin type": "normal, combination, oily",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Tatcha Matcha.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Tatcha Matcha.png"
         },
 
         {
-            "name": "The Ordinary Glucoside Foaming Cleanser",
+            "name": "The Ordinary - Glucoside Foaming Cleanser",
             "price": "$12.50",
             "ingredient 1": "Decyl-Glucoside",
             "ingredient 1 function": "attracts impurities and removes them from the skin while hydrating it",
@@ -207,13 +207,13 @@
             "ingredient 2 function": "lifts dirk and oil from skin",
             "ingredient 3": "Xantham Gum",
             "ingredient 3 function": "emulsifying agent with moisturizing and conditioning properties",
-            "skin concerns": "pores and oiliness",
+            "skin concerns": "pores, oiliness",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/The Ordinary.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/The_Ordinary_-_Glucoside_Foaming_Cleanser_150ml_Product__26641.png"
         },
 
         {
-            "name": "COSRX Low pH Good Morning Gel Cleanser",
+            "name": "COSRX - Low pH Good Morning Gel Cleanser",
             "price": "$14.00",
             "ingredient 1": "Betaine Salicylate (BHA)",
             "ingredient 1 function": "degrades glue which traps dead and damaged skin cells",
@@ -221,9 +221,9 @@
             "ingredient 2 function": "antibacterial agent that treats acne",
             "ingredient 3": "Allantoin",
             "ingredient 3 function": "promotes cell proliferation and synthesis of the extracellular matrix to improve skin texture",
-            "skin concerns": "dryness and uneven texture",
+            "skin concerns": "dryness, uneven texture",
             "skin type": "dry,sensitive",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/COSRX.jpg" 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/COSRX.png" 
         },
 
         {
@@ -237,11 +237,11 @@
             "ingredient 3 function": "prevents water loss and shields skin from irritation",
             "skin concerns": "skin irritation, dryness",
             "skin type": "all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/SKIN 1004.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/SKIN 1004.png"
         },
 
         {
-            "name": "Anua Heartleaf Succinic Moisture Cleansing Foam",
+            "name": "Anua - Heartleaf Succinic Moisture Cleansing Foam",
             "price": "$17.40",
             "ingredient 1": "Disodium Cocoamphodiacetate",
             "ingredient 1 function": "enables water to mix with oil and dirt particles to be rinsed off of the skin's surface",
@@ -249,9 +249,9 @@
             "ingredient 2 function": "removes stubborn particles to prevent pore clogging",
             "ingredient 3": "Succinic Acid",
             "ingredient 3 function": "antimicrobial agent decreases bacteria on the skin and helps control sebum production",
-            "skin concerns": "skin irritation and oiliness",
+            "skin concerns": "skin irritation, oiliness",
             "skin type":"all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Anua Cleanser.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/Anua Cleanser.png"
         },
 
         {
@@ -265,7 +265,7 @@
             "ingredient 3 function": "holds and binds water",
             "skin concerns": "dryness",
             "skin type":"all skin types",
-            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/ROUNDLAB.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/ROUNDLAB.png"
         },
 
         {
@@ -277,15 +277,15 @@
             "ingredient 2 function": "reduces expression of main inflammatory mediators and increases collagen production",
             "ingredient 3": "Sodium Cocoyl Isethionate",
             "ingredient 3 function": "lifts dirk and oil from skin and minimizes loss of water",
-            "skin concerns": "acne, oiliness",
+            "skin concerns": "acne and blemishes, oiliness",
             "skin type": "all skin types",
-            "image": "C:Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/BOJ Cleanser.jpg"
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/cleanser_pictures/BOJ Cleanser.png"
         }
     ],
 
     "Toners": [
         {
-            "name": "Glow Recipe Watermelon Glow PHA + BHA Pore-Tight Toner",
+            "name": "Glow Recipe - Watermelon Glow PHA + BHA Pore-Tight Toner",
             "price": "35.00",
             "ingredient 1": "Watermelon Extract",
             "ingredient 1 function": "source of antioxidants and protect skin from sun damage and environmental stressors",
@@ -294,11 +294,12 @@
             "ingredient 3": "Cactus Water",
             "ingredient 3 function": "contains electrolytes that keep skin hydrated and prevents UV damage and collagen loss",
             "skin concerns": "pores, dryness, dullness",
-            "skin type": "all skin types"
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Glow Recipe. Tonerjpg.png"
         },
 
         {
-            "name": "Glow Recipe Cloudberry Bright Essence Toner",
+            "name": "Glow Recipe - Cloudberry Bright Essence Toner",
             "price": "$38.00",
             "ingredient 1": "Cloudberry Concentrate",
             "ingredient 1 function": "contains Vitamins C,E, and A as antioxidants to neutralize toxins and protect skin cell degredation",
@@ -307,11 +308,12 @@
             "ingredient 3": "Glycerin",
             "ingredient 3 function": "prevents water loss and shields skin from irritation",
             "skin concerns": "dryness, dullness, uneven texture",
-            "skin type": "all skin types"
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Glow Recipe Cloudberry Toner.png"
         },
 
         {
-            "name": "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+            "name": "The Ordinary - Glycolic Acid 7% Exfoliating Toner",
             "price": "$13.00",
             "ingredient 1": "Glycolic Acid",
             "ingredient 1 function": "removes the top layers of dead skin cells",
@@ -319,25 +321,13 @@
             "ingredient 2 function": "reduces inflammation and irritation and supports the effects of vitamin C and collagen",
             "ingredient 3": "Panax Ginseng Root Extract",
             "ingredient 3 function": "restores skin's barrier and reduces inflammation",
-            "skin concerns": "dullness and unevent texture",
-            "skin type": "all skin types"
+            "skin concerns": "dullness, uneven texture",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/the Ordinary Toner.jpg"
         },
 
         {
-            "name": "Glow Recipe Watermelon Glow PHA + BHA Pore-Tight Toner",
-            "price": "$35.00",
-            "ingredient 1": "Watermelon Extract",
-            "ingredient 1 function": "source of antioxidants and protect skin from sun damage and environmental stressors",
-            "ingredient 2": "Cactus Water",
-            "ingredient 2 function": "contains electrolytes that keep skin hydrated and prevents UV damage and collagen loss",
-            "ingredient 3": "PHA",
-            "ingredient 3 function": "contain antioxidant properties and enhances the outer layer of the epidermis's barrier",
-            "skin concerns": "pores, dryness, dullness, uneven texture",
-            "skin type": "all skin types"
-        },
-
-        {
-            "name": "Tower 28 Beauty SOS Daily Rescue Facial Spray",
+            "name": "Tower 28 Beauty - SOS Daily Rescue Facial Spray",
             "price": "$28.00",
             "ingredient 1": "Hypochlorous Acid",
             "ingredient 1 function": "kills bacteria,speeds healing, and repairs damage",
@@ -346,11 +336,26 @@
             "ingredient 3": "Sodium Chloride",
             "ingredient 3 function": "solvent to deliver the hypochlorous acid",
             "skin concerns": "acne and blemishes",
-            "skin type": "all skin types"
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Tower 28.png"
         },
 
         {
-            "name": "I'm from Rice Toner",
+            "name": "LANEIGE - Cream Skin Toner with Ceramides and Peptides",
+            "price": "$36.00",
+            "ingredient 1": "Ceramides",
+            "ingredient 1 function": "stores fatty acids critical for a healthy skin barrier",
+            "ingredient 2": "Peptides",
+            "ingredient 2 function": "small proteins than enter skin to hydrate and smoothen fine lines and wrinkles",
+            "ingredient 3": "White LeaF Tea",
+            "ingredient 3 function": "solvent to deliver the hypochlorous acid",
+            "skin concerns": "dryness, dullness, fine lines and wrinkles",
+            "skin type": "normal, combination, dry, oily",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Laneige.png"
+        },
+
+        {
+            "name": "I'm from - Rice Toner",
             "price": "$28.00",
             "ingredient 1": "Oryza Sativa (Rice) Extract",
             "ingredient 1 function": "inhibits the breakdown of hylauronic acid, enhancing skin hydration",
@@ -359,11 +364,12 @@
             "ingredient 3": "Pentylene Glycol",
             "ingredient 3 function": "binds water to pull moisture into the skin", 
             "skin concerns": "dryness",
-            "skin type": "normal and dry"   
+            "skin type": "normal, dry", 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/I'm from.png"
         },
 
         {
-            "name": "Anua Heartleaf 77% Soothing Toner",
+            "name": "Anua - Heartleaf 77% Soothing Toner",
             "price": "$23.00",
             "ingredient 1": "Houttuynia Cordata Extract",
             "ingredient 1 function": "antioxidant, anti-inflammatory, and antibacterial properties that sooth skin",
@@ -372,11 +378,12 @@
             "ingredient 3": "Panthenol",
             "ingredient 3 function": "holds and binds water",
             "skin concerns": "skin irritation",
-            "skin type": "normal and sensitive"
+            "skin type": "normal, sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Anua 77%.png"
         },
 
         {
-            "name": "Anua Heartleaf 77 Clear Pad",
+            "name": "Anua - Heartleaf 77 Clear Pad",
             "price": "$25.00",
             "ingredient 1": "Houttuynia Cordata Extract",
             "ingredient 1 function": "antioxidant, anti-inflammatory, and antibacterial properties that sooth skin",
@@ -385,11 +392,12 @@
             "ingredient 3": "Tromethamine",
             "ingredient 3 function": "neutralizes more acidic substances to ensure the skin's pH is balanced",
             "skin concerns": "skin irritation, acne and blemishes, oiliness",
-            "skin type": "all skin types"
+            "skin type": "all skin types", 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/Anua Pads.png"
         },
 
         {
-            "name": "TIRTIR Milk Skin Toner",
+            "name": "TIRTIR - Milk Skin Toner",
             "price": "$25.00",
             "ingredient 1": "Glycyrrhiza Glabra Leaf Extract",
             "ingredient 1 function": "anti-inflammatory properties to reduce irritation and antioxidants to protect against free radicals",
@@ -398,7 +406,8 @@
             "ingredient 3": "Niacinamide",
             "ingredient 3 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
             "skin concerns": "acne and blemishes, dryness",
-            "skin type": "all skin types"
+            "skin type": "all skin types", 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/TIRTIT.png"
         },
 
         {
@@ -411,13 +420,14 @@
             "ingredient 3": "Propanediol",
             "ingredient 3 function": "pulls moisture into the skin and prevents water loss",
             "skin concerns": "dryness",
-            "skin type":"all skin types"
+            "skin type":"all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/toner pictures/HaruHaru.png"
         }
     ],
     
     "Serums": [
         {
-            "name": "The Ordinary Hyaluronic Acid 2% + B5 Hydrating Serum",
+            "name": "The Ordinary - Hyaluronic Acid 2% + B5 Hydrating Serum",
             "price": "$9.90",
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm and reduces dark spots",
@@ -426,10 +436,11 @@
             "ingredient 3": "Vitamin B5",
             "ingredient 3 function": "aids red blood cell and hormone production and helps the skin attract and retain moisture while enhancing the skin's natural repair processes",
             "skin concerns": "dryness",
-            "skin type":"all skin types"   
+            "skin type":"all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/The Ordinary HA Serum.png"
         },
         {
-            "name": "The Ordinary Niacinamide 10% + Zinc 1% Oil Control Serum",
+            "name": "The Ordinary - Niacinamide 10% + Zinc 1% Oil Control Serum",
             "price": "$6.00",
             "ingredient 1": "Niacinamide",
             "ingredient 1 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
@@ -437,12 +448,13 @@
             "ingredient 2 function": "reduces redness and sebum production and supports the skin's natural healing process",
             "ingredient 3": "Pentylene Glycol",
             "ingredient 3 function": "binds water to pull moisture into the skin",
-            "skin concerns": "pores and oiliness",
-            "skin type": "all skin types"
+            "skin concerns": "pores, oiliness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/The Ordinary Oil Control Serum .png"
         },
 
         {
-            "name": "Skinfix Barrier+ Triple Lipid + Collagen + Niacinamide Activating Serum",
+            "name": "Skinfix - Barrier+ Activating Serum",
             "price": "$69.00",
             "ingredient 1": "9% B-L3 with Barrier Lipids and Peptides",
             "ingredient 1 function": "increases natural lipids to improve skin barrier health",
@@ -450,12 +462,13 @@
             "ingredient 2 function": "polypeptide enhancing water solubility to increase hydration",
             "ingredient 3": "Niacinamide",
             "ingredient 3 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
-            "skin concerns": "fine lines and wrinkles, loss of firmness, and dryness",
-            "skin type": "all skin types"
+            "skin concerns": "fine lines and wrinkles, dullness, dryness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/SkinFix Serum.png"
         },
 
         {
-            "name": "Glow Recipe Watermelon Glow Niacinamide Dew Drops Serum",
+            "name": "Glow Recipe - Watermelon Glow Niacinamide Dew Drops Serum",
             "price": "$35.00",
             "ingredient 1": "Niacinamide",
             "ingredient 1 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
@@ -463,12 +476,13 @@
             "ingredient 2 function": "source of antioxidants and protect skin from sun damage and environmental stressors",
             "ingredient 3": "Hyaluronic Acid",
             "ingredient 3 function": "stimulates collagen production and has antimicrobial, antioxidant, and anti-inflammatory properties",
-            "skin concerns": "dryness and dullness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, dullness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/Glow Recipe Serum.png"
         },
 
         {
-            "name": "Drunk Elephant B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid",
+            "name": "Drunk Elephant - B-Hydra Intensive Hydration Serum",
             "price": "$49.00",
             "ingredient 1": "Pineapple Ceramide",
             "ingredient 1 function": "facilitates proliferation of fibroblast cells to enhance the skin's structure",
@@ -477,12 +491,12 @@
             "ingredient 3": "Sodium Hyaluronate",
             "ingredient 3 function": "form of hyaluronic acid that enters deep layers of skin, promoting moisture retention and reducing inflammation",
             "skin concerns": "fine lines and wrinkles, dryness, dullness, uneven texture",
-            "skin type": "all skin types"
-        
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/Drunk Elephant Serum.png"
         },
 
         {
-            "name": "COSRX Advanced Snail 96 Mucin Power Essence",
+            "name": "COSRX - Advanced Snail 96 Mucin Power Essence",
             "price": "$25.00",
             "ingredient 1": "Snail Mucin",
             "ingredient 1 function": "contains antioxidants to protect against free radical damage and help skin regenerate to reduce signs of aging",
@@ -491,24 +505,26 @@
             "ingredient 3": "Betaine",
             "ingredient 3 function": "promotes cell proliferation and synthesis of the extracellular matrix to improve skin texture",
             "skin concerns": "acne and blemishes, dryness, dullness",
-            "skin type": "all skin types"
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/COSRX Essence.png"
         },
 
         {
-            "name": "Beauty of Joseon Glow Serum",
+            "name": "Beauty of Joseon - Glow Serum",
             "price": "$17.00",
             "ingredient 1": "Propolis Extract",
-            "ingredient 1 function": "",
+            "ingredient 1 function": "contains polyphenols that slough away dead skills",
             "ingredient 2": "Niacinamide",
-            "ingredient 2 function": "",
+            "ingredient 2 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
             "ingredient 3": "Tamanu Oil",
-            "ingredient 3 function": "",
+            "ingredient 3 function": "promotes collagen production and heals wounds and reduces scars",
             "skin concerns": "pores, skin irritation, oiliness",
-            "skin type": "normal, sensitive, oily"
+            "skin type": "normal, sensitive, oily",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/BOJ Glow Serum.png"
         },
 
         {
-            "name": "SKIN 1004 Madagascar Centella Asiatica 100 Ampoule",
+            "name": "SKIN 1004 - Madagascar Centella Asiatica 100 Ampoule",
             "price": "$15.00",
             "ingredient 1": "Centella Asiatic Extract",
             "ingredient 1 function": "antioxidant, antiflammatory, anticellulite, and antiaging by increasing microcirculation of blood",
@@ -516,8 +532,9 @@
             "ingredient 2 function": "prevents water loss and shields skin from irritation",
             "ingredient 3": "Butylene Glycol",
             "ingredient 3 function": "coats the skin to create a barrier preventing water loss, hydrating and plumping skin",
-            "skin concerns": "skin damage, oiliness",
-            "skin type": "all skin types"
+            "skin concerns": "acne and blemishes, oiliness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/SKIN 1004 Serum.png"
         },
 
         {
@@ -529,12 +546,13 @@
             "ingredient 2 function": "hydrates skin, reduces inflammation and free radical damage",
             "ingredient 3": "Oryza Sativa (Rice) Bran Extract",
             "ingredient 3 function": "inhibits the breakdown of hylauronic acid, enhancing skin hydration",
-            "skin concerns": "acne and blemishes, oiliness, uneven texture, acne and blemishes",
-            "skin type": "sensitive"
+            "skin concerns": "acne and blemishes, oiliness, uneven texture",
+            "skin type": "normal, sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/AXIS-Y.png"
         },
 
         {
-            "name": "Torriden DIVE-IN Low Molecule Hyaluronic Acid Serum",
+            "name": "Torriden - DIVE-IN Low Molecule Hyaluronic Acid Serum",
             "price": "$24.00",
             "ingredient 1": "Glycerin",
             "ingredient 1 function": "prevents water loss and shields skin from irritation",
@@ -542,15 +560,16 @@
             "ingredient 2 function": "holds and binds water",
             "ingredient 3": "Sodium Hyaluronate",
             "ingredient 3 function": "form of hyaluronic acid that enters deep layers of skin, promoting moisture retention and reducing inflammation",
-            "skin concerns": "dryness and skin irritation",
-            "skin type": "sensitive"
+            "skin concerns": "dryness, skin irritation",
+            "skin type": "normal, sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/serum_pictures/Torriden Serum.png"
         }
 
     ],
 
     "Moisturizers": [
         {
-            "name": "Drunk Elephant: Lala Retro Nourishing Whipped Refillable Moisturizer",
+            "name": "Drunk Elephant - Lala Retro Nourishing Whipped Moisturizer",
             "price": "$64.00", 
             "ingredient 1": "African Oil Blend",
             "ingredient 1 function": "moisturizes skin and minimizes fine lines",
@@ -558,11 +577,13 @@
             "ingredient 2 function": "stores fatty acids critical for a healthy skin barrier",
             "ingredient 3": "Phytosphingosine",
             "ingredient 3 function": "naturally-occuring lipid in the skin and a known precursor to ceramides",
-            "skin concerns": "dryness,wrinkles, loss of firmness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, fine lines and wrinkles, dullness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/Drunk Elephant Moisturizer.png"
         },
+
         {
-            "name": "Tatcha The Dewy Skin Cream Plumping & Hydrating Moisturizer",
+            "name": "Tatcha - The Dewy Skin Cream Plumping & Hydrating Moisturizer",
             "price": "$72.00", 
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm",
@@ -570,11 +591,13 @@
             "ingredient 2 function": "source of natural polysaccharides with water-binding properties to hydrate skin",
             "ingredient 3": "HADASEI-3",
             "ingredient 3 function": "rice, green tea, and algae complex for pore decongestion, anti-inflammation, and hydration",
-            "skin concerns": "dryness, dullness, loss of firmness",
-            "skin type": "normal, dry"
+            "skin concerns": "dryness, dullness, pores",
+            "skin type": "normal, dry",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/Tatach Dewy.png"
         },
+
         {
-            "name": "The Ordinary Natural Moisturizing Factors + HA",
+            "name": "The Ordinary - Natural Moisturizing Factors + HA",
             "price": "$14.00", 
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm",
@@ -582,11 +605,13 @@
             "ingredient 2 function": "source of natural polysaccharides with water-binding properties to hydrate skin",
             "ingredient 3": "Lactic Acid",
             "ingredient 3 function": "removes dead skin cells by removing upper layer of skin",
-            "skin concerns": "dryness",
-            "skin type": "all skin types"  
+            "skin concerns": "dryness, acne and blemishes",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/The Ordinary Moisturizer.png"
         },
+
         {
-            "name": "Glow Recipe Plum Plump Refillable Hyaluronic Acid Moisturizer",
+            "name": "Glow Recipe - Plum Plump Refillable Hyaluronic Acid Moisturizer",
             "price": "$40.00", 
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm",
@@ -594,11 +619,13 @@
             "ingredient 2 function": "polypeptide enhancing water solubility to increase hydration",
             "ingredient 3": "Plum and Ice Willowherb",
             "ingredient 3 function": "balances oil to support the skin's microbiome",
-            "skin concerns": "dryness, dullness, loss of firmness",
-            "skin type": "combination"   
+            "skin concerns": "dryness, dullness, oiliness",
+            "skin type": "combination, oily", 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/Plum Plumo.png"
         },
+
         {
-            "name": "Tower 28 Beauty SOS Daily Skin Barrier Redness Recovery Moisturizer",
+            "name": "Tower 28 Beauty - SOS Daily Skin Barrier Redness Recovery Moisturizer",
             "price": "$24.00", 
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm",
@@ -606,12 +633,13 @@
             "ingredient 2 function": "stores fatty acids critical for a healthy skin barrier",
             "ingredient 3": "Allantoin",
             "ingredient 3 function": "promotes cell proliferation and synthesis of the extracellular matrix to improve skin texture",
-            "skin concerns": "skin irritation",
-            "skin type": "dry,sensitive" 
+            "skin concerns": "skin irritation, uneven texture",
+            "skin type": "dry,sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/Tower 28 Moisturizer.png" 
         }, 
 
         {
-            "name": "COSRX Advanced Snail 92 All In One Cream",
+            "name": "COSRX - Advanced Snail 92 All In One Cream",
             "price": "$26.00", 
             "ingredient 1": "Snail Mucin",
             "ingredient 1 function": "contains antioxidants to protect against free radical damage and help skin regenerate to reduce signs of aging",
@@ -620,11 +648,12 @@
             "ingredient 3": "Betaine",
             "ingredient 3 function": "promotes cell proliferation and synthesis of the extracellular matrix to improve skin texture",
             "skin concerns": "skin irritation, dullness, dryness",
-            "skin type": "dry,sensitive" 
+            "skin type": "dry,sensitive",
+            "image":"C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/COSRX-Advanced-Snail-92-All-In-One-Cream-Product_860x.png"
         },
 
         {
-            "name": "Beauty of Joseon Dynasty Cream",
+            "name": "Beauty of Joseon - Dynasty Cream",
             "price": "$24.00",
             "ingredient 1": "Rice Bran Water",
             "ingredient 1 function": "removes impurities and provides hydration",
@@ -632,12 +661,13 @@
             "ingredient 2 function": "slows the loss of collagen to prevent aging",
             "ingredient 3": "Squalane",
             "ingredient 3 function": "hydrates skin, reduces inflammation and free radical damage",
-            "skin concerns": "dryness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, pores, fine lines and wrinkles",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/BOJ Dynasty Cream.png"
         }, 
 
         {
-            "name": "SoonJung 2x Barrier Intensive Cream",
+            "name": "SoonJung - 2x Barrier Intensive Cream",
             "price": "$20.40",
             "ingredient 1": "Panthenol",
             "ingredient 1 function": "holds and binds water",
@@ -645,8 +675,9 @@
             "ingredient 2 function": "reduces skin damage and encourages collagen production and sealing in hydration",
             "ingredient 3":"Camellia Sinensis Leaf Extract",
             "ingredient 3 function": "green leaf extract containing polyphenols with anti-oxidant and skin-soothing properties",
-            "skin concerns": "dryness,skin irritation",
-            "skin type": "dry"
+            "skin concerns": "dryness, skin irritation",
+            "skin type": "dry",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/SoonjUNG.png"
         },
 
         {
@@ -659,7 +690,8 @@
             "ingredient 3": "Glycerin",
             "ingredient 3 function": "prevents water loss and shields skin from irritation",
             "skin concerns": "skin irritation, dryness",
-            "skin type": "sensitive"    
+            "skin type": "sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/SKIN 1004 Moisturizer.png"
         },
 
         {
@@ -671,15 +703,16 @@
             "ingredient 2 function": "holds and binds water",
             "ingredient 3": "Niacinamide",
             "ingredient 3 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
-            "skin concerns": "skin irritation",
-            "skin type": "dry,sensitive"
+            "skin concerns": "skin irritation, acne and blemishes",
+            "skin type": "dry,sensitive",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/moisturizer pictures/Dr. G.png"
         }
     ],
 
     "Sunscreens": [
 
         {
-            "name": "Supergoop! Glowscreen SPF 40 Sunscreen with Hyaluronic Acid + Niacinamide",
+            "name": "Supergoop! - Glowscreen SPF 40 Sunscreen",
             "price": "$38.00",
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm and reduces dark spots",
@@ -688,11 +721,12 @@
             "ingredient 3": "Cocoa Peptides",
             "ingredient 3 function": "helps protect skin from blue-light damage",
             "skin concerns": "dullness, dryness, fine lines and wrinkles",
-            "skin type":"all skin types"
+            "skin type":"all skin types", 
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Supergoop.png"
         },
 
         {
-            "name": "Supergoop!Protec(tint) Daily SPF Tint SPF 50 Sunscreen Skin Tint with Hyaluronic Acid and Ectoin",
+            "name": "Supergoop! - Protec(tint) Daily SPF Tint SPF 50",
             "price": "$44.00",
             "ingredient 1": "Ectoin",
             "ingredient 1 function": "balances skin's natural water levels to repair moisure barrier and creates protective layer on skin to lock in moisture",
@@ -701,12 +735,13 @@
             "ingredient 3": "Zinc Oxide",
             "ingredient 3 function": "treats skin irritation and protects skin from ultraviolet rays",
             "skin concerns": "dullness",
-            "skin type": "dry, combination, normal"
+            "skin type": "dry, combination, normal",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Supergoop Tint.png"
         
         },
 
         {
-            "name": "Kosas DreamBeam Silicone-Free Mineral Sunscreen SPF 40 with Ceramides and Peptides",
+            "name": "Kosas - DreamBeam Silicone-Free Mineral Sunscreen SPF 40",
             "price": "$40.00",
             "ingredient 1": "Ceramides",
             "ingredient 1 function": "",
@@ -714,12 +749,13 @@
             "ingredient 2 function": "stimulates collagen production to make skin more firm",
             "ingredient 3": "Allantoin",
             "ingredient 3 function": "promotes cell proliferation and synthesis of the extracellular matrix to improve skin texture",
-            "skin concerns": "dryness, dullness, loss of firmness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, dullness, uneven texture",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Kosas.png"
         },
 
         {
-            "name": "innisfree Daily UV Defense Invisible Broad Spectrum SPF 36 Sunscreen",
+            "name": "innisfree - Invisible Broad Spectrum SPF 36 Sunscreen",
             "price": "$18.00",
             "ingredient 1": "Green Tea",
             "ingredient 1 function": "decreases oil production and clears pores",
@@ -728,11 +764,12 @@
             "ingredient 3": "Cica",
             "ingredient 3 function": "anti-inflammatory and anti-microbrial properties prevent blemishes",
             "skin concerns": "acne and blemishes, fine lines and wrinkles, dryness",
-            "skin type": "all skin types"
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Innisfree 1.png"
         },
 
         {
-            "name": "innisfree Daily UV Defense Mineral Sunscreen Broad Spectrum SPF 45",
+            "name": "innisfree - Mineral Sunscreen Broad Spectrum SPF 45",
             "price": "$22.00",
             "ingredient 1": "Hyaluronic Acid",
             "ingredient 1 function": "stimulates collagen production to make skin more firm and reduces dark spots",
@@ -740,12 +777,13 @@
             "ingredient 2 function": "anti-inflammatory and anti-microbrial properties prevent blemishes",
             "ingredient 3": "Green Tint",
             "ingredient 3 function": "neutralizes redness",
-            "skin concerns": "acne and blemishes, fine lines and wrinkles, redness",
-            "skin type": "all skin types"
+            "skin concerns": "acne and blemishes, fine lines and wrinkles, skin irritation",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Innisfree 2.png"
         },
 
         {
-            "name": "Beauty of Joseon Relief Sun",
+            "name": "Beauty of Joseon - Relief Sun",
             "price": "$18.00",
             "ingredient 1": "Oryza Sativa (Rice) Extract",
             "ingredient 1 function": "inhibits the breakdown of hylauronic acid, enhancing skin hydration",
@@ -753,12 +791,13 @@
             "ingredient 2 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
             "ingredient 3": "Glycerin",
             "ingredient 3 function": "prevents water loss and shields skin from irritation",
-            "skin concerns": "dryness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, acne and blemishes, skin irritation",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/BOJ Sunscreen.png"
         },
 
         {
-            "name": "SKIN 1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
+            "name": "SKIN 1004 - Madagascar Centella Hyalu-Cica Water-Fit Sun Serum",
             "price": "$19.00",
             "ingredient 1": "Centella Asiatic Extract",
             "ingredient 1 function": "antioxidant, anti-inflammatory, and antibacterial properties that sooth skin",
@@ -766,13 +805,14 @@
             "ingredient 2 function": "stimulates collagen production to make skin more firm",
             "ingredient 3": "Niacinamide",
             "ingredient 3 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
-            "skin concerns": "dryness",
-            "skin type": "all skin types"
+            "skin concerns": "dryness, acne and blemishes",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/SKIN1004 SS.png"
         
         },
 
         {
-            "name": "ROUND LAB Birch Juice Moisturizing Sunscreen",
+            "name": "ROUND LAB - Birch Juice Moisturizing Sunscreen",
             "price": "$28.00",
             "ingredient 1": "Niacinamide",
             "ingredient 1 function": "hydrates, lightens hyperpigmentation, promotes elasticity, decreases redness",
@@ -780,12 +820,13 @@
             "ingredient 2 function": "helps elimate toxins and contains antioxidant, hydrating, and soothing properties",
             "ingredient 3": "Hyaluronic Acid",
             "ingredient 3 function": "stimulates collagen production and has antimicrobial, antioxidant, and anti-inflammatory properties",
-            "skin concerns": "dryness",
-            "skin type": "dry"
+            "skin concerns": "dryness, acne and blemishes",
+            "skin type": "dry",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/ROUNDLAB SS.png"
         },
 
         {
-            "name": "COSRX Aloe Soothing Sun Cream",
+            "name": "COSRX - Aloe Soothing Sun Cream",
             "price": "$16.00",
             "ingredient 1": "Aloe Complex",
             "ingredient 1 function": "softens skin by joining flaking epidermal cells with amino acids that soften hardened skin cells",
@@ -793,12 +834,13 @@
             "ingredient 2 function": "removes stubborn particles to prevent pore clogging",
             "ingredient 3": "Butylene Glycol",
             "ingredient 3 function": "coats the skin to create a barrier preventing water loss, hydrating and plumping skin",
-            "skin concerns": "dehydrated skin",
-            "skin type": "all skin types"
+            "skin concerns": "dryness",
+            "skin type": "all skin types",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/COSRX SS.png"
         },
 
         {
-            "name": "TOCOBO Cotton Soft Sun Stick",
+            "name": "TOCOBO - Cotton Soft Sun Stick",
             "price": "$20.00",
             "ingredient 1": "Octocrylene",
             "ingredient 1 function": "protects skin from UVA and UVB rays",
@@ -807,7 +849,8 @@
             "ingredient 3": "Silica",
             "ingredient 3 function": "activates enzymes involved in the collagen network",
             "skin concerns": "oiliness",
-            "skin type": "sensitve and oily"
+            "skin type": "sensitve, oily",
+            "image": "C:/Users/arlen/github-classroom/bucsspring2024/final-project-aes/assets/sunscreen pictures/Tocobo-Cotton-Soft-Sun-Stick-2.png"
         }
 
     ]

@@ -1,16 +1,19 @@
 import pygame
 import json
-import os
 
 pygame.init ()
 
 
 BUTTON_WIDTH = 200
 BUTTON_HEIGHT = 80
-PURPLE= (75,0,130)
-BLUE= (173,216,230)
-PERIWINKLE = (204,204,255)
-
+CREAM = (255,253,244)
+YELLOW = (255,255,237)
+GREEN = (224, 252, 224)
+PINK = (255,238,238)
+ORANGE = (255,210,198)
+BLUE= (176,224,230)
+PURPLE = (217,210,235)
+GREY = 	(251,247,245)
 
 class Program:
     def __init__(self):
@@ -23,13 +26,17 @@ class Program:
         self.title_font = pygame.font.SysFont ('rockwell', 50)
         self.prompt_font = pygame.font.SysFont ('rockwell', 40)
         self.text_font = pygame.font.SysFont ('rockwell', 35)
+        self.name_font = pygame.font.SysFont ("rockwell", 15)
+        self.price_font = pygame.font.SysFont ("rockwell", 13)
+        self.instructions_font = pygame.font.SysFont ("rockwell", 20)
 
         self.skin_concerns = ["pores", "acne and blemishes", "oiliness", "dryness", "fine lines and wrinkles", "skin irritation", "dullness", "uneven texture", "dark spots"]
         self.skin_types = ["normal", "combination", "oily", "sensitive", "dry"]
        
         self.concern_buttons = []
         self.type_buttons = []
-        self.suggestion_buttons = []       
+        self.oil_cleanser_buttons = []       
+        self.cleanser_buttons = []
        
         self.create_concern_buttons ()
         self.create_type_buttons ()
@@ -37,6 +44,7 @@ class Program:
         self.selected_concerns = set ()
         self.selected_type = None
         self.clicked_button = None
+        self.selected_products = []
 
     def create_concern_buttons (self):
         
@@ -100,7 +108,7 @@ class Program:
                 self.type_buttons.append(Button(text, (x, y), (BUTTON_WIDTH, BUTTON_HEIGHT)))
             
     def run (self):
-        self.screen.fill("light pink")
+        self.screen.fill(CREAM)
         welcome_text = self.title_font.render("Welcome to Skincare Deviser", True, "black")
         welcome_box = welcome_text.get_rect(center=(self.width // 2, self.height//2))
         self.screen.blit(welcome_text, welcome_box)
@@ -109,13 +117,13 @@ class Program:
         self.concerns_run ()
        
     def concerns_run(self):
-            self.screen.fill("light pink")
+            self.screen.fill(CREAM)
             concerns_prompt = self.prompt_font.render("Choose three skin concerns you want to address", True, "black")
             concerns_box = concerns_prompt.get_rect(center=(self.width // 2, self.height//2 - 100))
             self.screen.blit(concerns_prompt , concerns_box)
                
             for button in self.concern_buttons:
-                button.draw_concerns(self.screen, text_font = self.text_font)
+                button.draw_prompt_buttons(self.screen, text_font = self.text_font)
                
             self.prompt_displayed = True    
             pygame.display.flip ()
@@ -136,13 +144,13 @@ class Program:
                                                 break
                                                                                
     def types_run (self):  
-            self.screen.fill(BLUE)
+            self.screen.fill(CREAM)
             type_prompt = self.prompt_font.render("What is your skin type?", True, "black")
             type_box = type_prompt.get_rect(center=(self.width // 2, self.height//2 - 100))
             self.screen.blit(type_prompt,type_box)
            
             for button in self.type_buttons:
-                button.draw_types(self.screen, text_font = self.text_font)
+                button.draw_prompt_buttons(self.screen, text_font = self.text_font)
                
             self.prompt_displayed = True    
             pygame.display.flip ()
@@ -161,25 +169,23 @@ class Program:
                                         self.oil_cleanser_run()
                                         break
     
-    def create_suggestion_buttons (self, suggestions, instruction_text):
+    def create_product_buttons (self, suggestions, color, x_button_spacing, x_offset, instruction_text):
 
-            self.screen.fill (PERIWINKLE)
+            self.screen.fill (color)
             button_size = (70,50)
             y_button_spacing = 170
-            x_button_spacing = 390 
+            x_button_spacing = x_button_spacing
             max_suggestions_in_row = 3
-            x_offset = 210
+            x_offset = x_offset
             y_offset = 330
-            image_size = (100,100)
+            image_size = (90,120)
             current_row = 0
             current_column = 0
-            name_font = pygame.font.SysFont ("rockwell", 15)
-            price_font = pygame.font.SysFont ("rockwell", 13)
-            instructions_font = pygame.font.SysFont ("rockwell", 20)
+            product_buttons = []
             hover_areas = []
             
             for i, text in enumerate(instruction_text):
-                text_surface = instructions_font.render(text, True, "black")
+                text_surface = self.instructions_font.render(text, True, "black")
                 text_rect = text_surface.get_rect(center=(self.width // 2, 50 + i * 50))
                 self.screen.blit(text_surface, text_rect)
                 
@@ -192,22 +198,22 @@ class Program:
                 button_text = suggestion ['name']
                 button = Button (button_text, button_position, button_size)
                 price_text = suggestion ["price"]
-                button.draw_suggestions (self.screen, name_font, price_font, button_text, price_text)
+                button.draw_suggestions (self.screen, self.name_font, self.price_font, button_text, price_text)
                 button_image = pygame.image.load(suggestion ["image"])
                 button_image = pygame.transform.scale (button_image,image_size)
 
                 hover_text = self.create_hover_text ([suggestion])
                 image = Hover (button_image, button_position, button_size, hover_text)
-                image_rect = image.image_dimensions(self.screen,button_image)
+                image.image_dimensions(self.screen,button_image)
                 
-                self.suggestion_buttons.append (button) 
+                product_buttons.append (button) 
                 hover_areas.append (image)
                 
                 current_column += 1
                 if current_column >= max_suggestions_in_row:
                     current_row +=1
                     current_column = 0     
-            return hover_areas
+            return product_buttons, hover_areas
    
     def create_hover_text (self, suggestions):
         
@@ -226,11 +232,11 @@ class Program:
         instruction_text = [
                 "An oil cleanser is essential for cleaning off oil-based impurities like makeup and sunscreen",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Hint: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients"
             ]
         
-        suggestions = self.get_cleanser_suggestions ()
-        hover_areas = self.create_suggestion_buttons (suggestions, instruction_text)
+        suggestions = self.get_product_suggestions (category = "Oil Cleansers")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, YELLOW, 390, 210, instruction_text)
         pygame.display.flip ()
        
         while True:
@@ -238,34 +244,38 @@ class Program:
                     if event.type == pygame.QUIT:
                         pygame.quit ()
                         exit ()
+                    
                     elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                        for button in self.suggestion_buttons:
-                            clicked_button = button.is_clicked (event.pos)
-                            if clicked_button:
-                                self.clicked_button = clicked_button
-                                self.cleanser_run ()
-                                break
+                            for button in product_buttons:
+                                
+                                if button.is_clicked (event.pos):
+                                    clicked_index = product_buttons.index(button)
+                                    clicked_product = suggestions [clicked_index]
+                                    self.selected_products.append(clicked_product)
+                                    self.cleanser_run ()
+                                    return
                                 
                     elif event.type == pygame.MOUSEMOTION:      
                         hovering = False                  
                         for hover_area in hover_areas:
                             if hover_area.is_hovered (pygame.mouse.get_pos ()):
-                                hover_text = self.create_hover_text (suggestions)
+                                self.create_hover_text (suggestions)
                                 hover_area.draw_hover_boxes (self.screen, "white", hover_area.hover_text)
                                 hovering = True
                         if not hovering:
-                            self.create_suggestion_buttons (suggestions, instruction_text)
+                            self.create_product_buttons (suggestions, YELLOW, 390, 210,instruction_text)
+                        
                         pygame.display.flip ()
     
     def cleanser_run (self):
         instruction_text = [
-                "An oil cleanser is essential for cleaning off oil-based impurities like makeup and sunscreen",
+                "Water-based facial cleansers are essential for cleaning off water-based impurities",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Hint: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients"
             ]
         
-        suggestions = self.get_oil_cleanser_suggestions ()
-        hover_areas = self.create_suggestion_buttons (suggestions, instruction_text)
+        suggestions = self.get_product_suggestions (category= "Cleansers")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, GREEN, 385, 230, instruction_text)
         pygame.display.flip ()
        
         while True:
@@ -274,54 +284,221 @@ class Program:
                         pygame.quit ()
                         exit ()
                     elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                        for button in self.suggestion_buttons:
-                            clicked_button = button.is_clicked (event.pos)
-                            if clicked_button:
-                                self.clicked_button = clicked_button
+                        for button in product_buttons:
+                            
+                            if button.is_clicked (event.pos):
+                                clicked_index = product_buttons.index(button)
+                                clicked_product = suggestions [clicked_index]
+                                self.selected_products.append(clicked_product)
+                                self.toner_run ()
+                                return
 
                     elif event.type == pygame.MOUSEMOTION:      
                         hovering = False                  
                         for hover_area in hover_areas:
                             if hover_area.is_hovered (pygame.mouse.get_pos ()):
-                                hover_text = self.create_hover_text (suggestions)
+                                self.create_hover_text (suggestions)
                                 hover_area.draw_hover_boxes (self.screen, "white",hover_area.hover_text)
                                 hovering = True
                         if not hovering:
-                            self.create_suggestion_buttons (suggestions, instruction_text)
+                             self.create_product_buttons (suggestions, GREEN, 385, 230, instruction_text)
                         pygame.display.flip ()
               
-    def get_oil_cleanser_suggestions (self):
+    def toner_run (self):
+        instruction_text = [
+                "Toners penetrate the skin to remove dead skin cells and hydrate the skin",
+                "The suggestions below are tailored to your skin. Choose one that best suits you.",
+                "Tip: Hover over pictures to read about the top three ingredients"
+            ]
+        
+        suggestions = self.get_product_suggestions (category= "Toners")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, PINK, 385, 230, instruction_text)
+        pygame.display.flip ()
+       
+        while True:
+                for event in pygame.event.get ():
+                    if event.type == pygame.QUIT:
+                        pygame.quit ()
+                        exit ()
+                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        for button in product_buttons:
+                            if button.is_clicked (event.pos):
+                                clicked_index = product_buttons.index(button)
+                                clicked_product = suggestions [clicked_index]
+                                self.selected_products.append(clicked_product)
+                                self.serum_run ()
+                                return
+
+                    elif event.type == pygame.MOUSEMOTION:      
+                        hovering = False                  
+                        for hover_area in hover_areas:
+                            if hover_area.is_hovered (pygame.mouse.get_pos ()):
+                                self.create_hover_text (suggestions)
+                                hover_area.draw_hover_boxes (self.screen, "white",hover_area.hover_text)
+                                hovering = True
+                        if not hovering:
+                             self.create_product_buttons (suggestions, PINK, 385, 230, instruction_text)
+                        pygame.display.flip ()
+              
+    def serum_run (self):
+        instruction_text = [
+                "Serums contain concentrated ingredients to target specific skin concerns",
+                "The suggestions below are tailored to your skin. Choose one that best suits you.",
+                "Tip: Hover over pictures to read about the top three ingredients"
+            ]
+        
+        suggestions = self.get_product_suggestions (category= "Serums")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, ORANGE, 390, 230, instruction_text)
+        pygame.display.flip ()
+       
+        while True:
+                for event in pygame.event.get ():
+                    if event.type == pygame.QUIT:
+                        pygame.quit ()
+                        exit ()
+                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        for button in product_buttons:
+                            if button.is_clicked (event.pos):
+                                clicked_index = product_buttons.index(button)
+                                clicked_product = suggestions [clicked_index]
+                                self.selected_products.append(clicked_product)
+                                self.moisturizer_run ()
+                                return
+
+                    elif event.type == pygame.MOUSEMOTION:      
+                        hovering = False                  
+                        for hover_area in hover_areas:
+                            if hover_area.is_hovered (pygame.mouse.get_pos ()):
+                                self.create_hover_text (suggestions)
+                                hover_area.draw_hover_boxes (self.screen, "white",hover_area.hover_text)
+                                hovering = True
+                        if not hovering:
+                             self.create_product_buttons (suggestions, ORANGE, 390, 230, instruction_text)
+                        pygame.display.flip ()
+              
+    def moisturizer_run (self):
+        instruction_text = [
+                "Moisturizers are essential for ensuring that skin is hydrated, preventing excess oil and breakouts",
+                "The suggestions below are tailored to your skin. Choose one that best suits you.",
+                "Tip: Hover over pictures to read about the top three ingredients"
+            ]
+        
+        suggestions = self.get_product_suggestions (category= "Moisturizers")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, PURPLE, 420, 210, instruction_text)
+        pygame.display.flip ()
+       
+        while True:
+                for event in pygame.event.get ():
+                    if event.type == pygame.QUIT:
+                        pygame.quit ()
+                        exit ()
+                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        for button in product_buttons:
+                                if button.is_clicked (event.pos):
+                                    clicked_index = product_buttons.index(button)
+                                    clicked_product = suggestions [clicked_index]
+                                    self.selected_products.append(clicked_product)
+                                    self.sunscreen_run ()
+                                    return
+
+                    elif event.type == pygame.MOUSEMOTION:      
+                        hovering = False                  
+                        for hover_area in hover_areas:
+                            if hover_area.is_hovered (pygame.mouse.get_pos ()):
+                                self.create_hover_text (suggestions)
+                                hover_area.draw_hover_boxes (self.screen, "white", hover_area.hover_text)
+                                hovering = True
+                        if not hovering:
+                             self.create_product_buttons (suggestions, PURPLE, 420, 210, instruction_text)
+                        pygame.display.flip ()  
+              
+    def sunscreen_run (self):
+        instruction_text = [
+                "Sunscreens are a necessary tool for protecing skin against harmful UV rays and free radical damage",
+                "The suggestions below are tailored to your skin. Choose one that best suits you.",
+                "Tip: Hover over pictures to read about the top three ingredients"
+            ]
+        
+        suggestions = self.get_product_suggestions (category= "Sunscreens")
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, BLUE, 430, 220, instruction_text)
+        pygame.display.flip ()
+       
+        while True:
+                for event in pygame.event.get ():
+                    if event.type == pygame.QUIT:
+                        pygame.quit ()
+                        exit ()
+                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        for button in product_buttons:
+                            if button.is_clicked (event.pos):
+                                clicked_index = product_buttons.index(button)
+                                clicked_product = suggestions [clicked_index]
+                                self.selected_products.append(clicked_product)
+                                self.final_routine_run ()
+                                return
+
+                    elif event.type == pygame.MOUSEMOTION:      
+                        hovering = False                  
+                        for hover_area in hover_areas:
+                            if hover_area.is_hovered (pygame.mouse.get_pos ()):
+                                self.create_hover_text (suggestions)
+                                hover_area.draw_hover_boxes (self.screen, "white",hover_area.hover_text)
+                                hovering = True
+                        if not hovering:
+                             self.create_product_buttons (suggestions, BLUE, 430, 220, instruction_text)
+                        pygame.display.flip ()  
+          
+              
+    def get_product_suggestions (self, category):
         
         suggestions = []
         with open('data.json', 'r') as f:
                 data = json.load(f)
 
-        oil_cleansers = data.get("Oil Cleansers", [])
+        products = data.get(category, [])
 
         selected_type = self.selected_type.lower()
          
-        for oil_cleanser in oil_cleansers:
-                if any(concern in oil_cleanser.get("skin concerns", []) for concern in self.selected_concerns): 
-                    if selected_type in oil_cleanser.get("skin type", []) or "all skin types" in oil_cleanser.get("skin type", []):
-                        suggestions.append(oil_cleanser)
+        for product in products:
+                if any(concern in product.get("skin concerns", []) for concern in self.selected_concerns): 
+                    if selected_type in product.get("skin type", []) or "all skin types" in product.get("skin type", []):
+                        suggestions.append(product)
         return suggestions
     
-    def get_cleanser_suggestions (self):
+    def final_routine_run (self):
+
+        instruction_text = [
+                "Congratulations! You've built your skincare routine!" '\n'
+                "Here are the products you've chosen:"
+            ]
         
-        suggestions = []
-        with open('data.json', 'r') as f:
-                data = json.load(f)
-
-        cleansers = data.get("Cleansers", [])
-
-        selected_type = self.selected_type.lower()
-         
-        for cleanser in cleansers:
-                if any(concern in cleanser.get("skin concerns", []) for concern in self.selected_concerns): 
-                    if selected_type in cleanser.get("skin type", []) or "all skin types" in cleanser.get("skin type", []):
-                        suggestions.append(cleanser)
-        return suggestions
+        suggestions = self.selected_products
+        product_buttons, hover_areas = self.create_product_buttons (suggestions, GREY, 400, 220, instruction_text)
     
+        exit_button = Button ("Exit", (self.width //2 + 270, self.height - 80), (200,50))
+        return_button = Button ("Return to Start", (self.width //2 - 500, self.height - 80), (200,50))
+        
+        pygame.display.flip ()
+        
+        
+        while True:
+                for event in pygame.event.get ():
+                    if event.type == pygame.QUIT:
+                        pygame.quit ()
+                        exit ()
+                    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                        if exit_button.is_clicked (event.pos):
+                            pygame.quit ()
+                            exit ()
+                        elif return_button.is_clicked (event.pos):
+                            self.selected_products = []
+                            self.run ()
+                    
+                    exit_button.draw_prompt_buttons (self.screen, self.text_font)
+                    return_button.draw_prompt_buttons(self.screen, self.text_font)
+                
+                pygame.display.flip ()        
+
 class Button:
     def __init__(self, text, position, size):
         self.text = text
@@ -330,27 +507,13 @@ class Button:
         self.rect = pygame.Rect (position,size)
         self.selected = False
     
-    def draw_concerns(self, surface, text_font):
+    def draw_prompt_buttons(self, surface, text_font):
         
         font = text_font
        
-        text_surface = font.render(self.text, True, "navy blue")
+        text_surface = font.render(self.text, True, "black")
        
         text_rect = text_surface.get_rect(center = (self.position [0] + self.size [0] //2,self.position [1] + self.size [1] //2 ))
-       
-        pygame.draw.rect(surface, "light pink", (self.position, self.size))
-
-        surface.blit(text_surface, text_rect)
-       
-    def draw_types(self, surface, text_font):
-        
-        font = text_font
-   
-        text_surface = font.render(self.text, True, PURPLE)
-       
-        text_rect = text_surface.get_rect(center = (self.position [0] + self.size [0] //2,self.position [1] + self.size [1] //2 ))
-       
-        pygame.draw.rect(surface, BLUE, (self.position, self.size))
 
         surface.blit(text_surface, text_rect)
    
@@ -358,7 +521,6 @@ class Button:
         
         name_surface = text_font.render(text, True, "black")     
         name_rect = name_surface.get_rect(center = self.rect.center)
-        pygame.draw.rect(surface, PERIWINKLE, self.rect)
    
         price_surface = price_font.render(price_text, True, "black")
         price_rect = price_surface.get_rect(center=(self.rect.centerx, self.rect.centery + 20))
@@ -386,7 +548,7 @@ class Hover:
     
     def draw_hover_boxes (self, surface, hover_color, hover_text):
         if self.hovered:
-            hover_rect = pygame.Rect (self.rect.right + 10, self.rect.top - 120, 305, 220)
+            hover_rect = pygame.Rect (self.rect.right-100, self.rect.top-60, 350, 220)
             pygame.draw.rect (surface, hover_color, hover_rect)
             
             pop_up_font = pygame.font.SysFont ("rockwell", 13)
