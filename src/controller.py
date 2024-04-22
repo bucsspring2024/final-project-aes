@@ -279,7 +279,7 @@ class Skincare_Genie:
         instruction_text = [
                 "An oil cleanser is essential for cleaning off oil-based impurities like makeup and sunscreen",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category = "Oil Cleansers")
@@ -320,7 +320,7 @@ class Skincare_Genie:
         instruction_text = [
                 "Water-based facial cleansers are essential for cleaning off water-based impurities",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category= "Cleansers")
@@ -359,7 +359,7 @@ class Skincare_Genie:
         instruction_text = [
                 "Toners penetrate the skin to remove dead skin cells and hydrate the skin",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category= "Toners")
@@ -398,7 +398,7 @@ class Skincare_Genie:
         instruction_text = [
                 "Serums contain concentrated ingredients to target specific skin concerns",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category= "Serums")
@@ -437,7 +437,7 @@ class Skincare_Genie:
         instruction_text = [
                 "Moisturizers are essential for ensuring that skin is hydrated, preventing excess oil and breakouts",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category= "Moisturizers")
@@ -476,7 +476,7 @@ class Skincare_Genie:
         instruction_text = [
                 "Sunscreens are a necessary tool for protecing skin against harmful UV rays and free radical damage",
                 "The suggestions below are tailored to your skin. Choose one that best suits you.",
-                "Tip: Hover over pictures to read about the top three ingredients"
+                "Tip: Hover over pictures to read about the top three ingredients and click the text to choose"
             ]
         
         suggestions = self.get_product_suggestions (category= "Sunscreens")
