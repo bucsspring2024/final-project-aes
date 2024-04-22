@@ -32,20 +32,26 @@ Arlene Shaji
 
 ### Features
 
-1. Start menu
-2. Images 
-3. Pop up boxes when hovering 
-4. Prices 
-5. Other similar reccomendations
+1. Personalizes products to skin concerns and skin types 
+2. Images for each product 
+3. Pop up boxes when hovering over images showing ingredients
+4. Allows users to choose their own products 
+5. Final screen showing all chosen products and gives option to restart
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+- Skincare_Genie - controller class that handles events and runs the actual program
+- Button - creates the clickable buttons for answers to prompts and selecting products
+- Hover - draws and organizes text in the pop up boxes and checks if the mouse is hovering over an image
 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+|  1                   | Welcome Message  | Program is launched and the title is displayed as "Welcome to Skincare Genie" and appears for 2 seconds  |
+|  2                   | Skin Concern Selection | Click on three skin concerns from the list and after the final is chosen, it switches to the next screen.      |
+| 3                    | Skin Type Selection    |  Click on one skin type from the list and after it is chosen, it switches to the next screen. 
+| 4                    | Product Selection    |  Hover over a product image and make sure the ingredients are specific to each product. Click on one product from the list and after it is chosen, it switches to the next screen. Repeat for every product screen. 
+| 5                    | Final Routine    |  All of the chosen products are displayed. Hover over the images to make sure the pop-up boxes are displayed with specific ingredients. 
+| 6                    | Exit Button  |  Click on the Exit button and verify the application closes. 
+| 7                    | Return to Start Button  |  Click on the Return to Start button and verify goes back to the beginning and gives completely new suggestions. 
