@@ -43,15 +43,78 @@ The program asks the users about their main skin concerns and skin type and gene
 - Skincare_Genie - controller class that handles events and runs the actual program
 - Button - creates the clickable buttons for answers to prompts and selecting products
 - Hover - draws and organizes text in the pop up boxes and checks if the mouse is hovering over an image
+- View - draws text for display on the interface
 
 ## ATP
+ 
+ ### Program Launch
+ #### Description:
+ Ensure that the program is launched correctly and the welcome message is shown. 
+ #### Procedure: 
+* Step 1: Open terminal and go to main folder
+* Step 2: Type in: python main.py
+ #### Expected Results:
+ Program is launched and the title is displayed as "Welcome to  Skincare Genie" and appears for 2 seconds. 
 
-| Step                 |Procedure             |Expected Results                   |
-|----------------------|:--------------------:|----------------------------------:|
-|  1                   | Welcome Message  | Program is launched and the title is displayed as "Welcome to Skincare Genie" and appears for 2 seconds  |
-|  2                   | Skin Concern Selection | Click on acne and blemishes, pores, and oiliness from the list and after the final is chosen, it switches to the next screen.      |
-| 3                    | Skin Type Selection    |  Click on sensitive from the list and after it is chosen, it switches to the next screen. 
-| 4                    | Product Selection    |  Hover over the image of the Anua oil cleanser and the Kose oil cleanser and make sure the ingredients are specific to each product. Click on the Anua cleanser from the list and after it is chosen, it switches to the next screen. Repeat for every product screen choosing products in this order: Youth to the People cleanser, Tower 28 toner, SKIN 1004 serum, Dr. G moisturizer, and SKIN 1004 sunscreen. 
-| 5                    | Final Routine    |  All of the chosen products listed in step 4 are displayed. Hover over the images to make sure the pop-up boxes are displayed with specific ingredients. 
-| 6                    | Exit Button  |  Click on the Exit button and verify the application closes. 
-| 7                    | Return to Start Button  |  Click on the Return to Start button and verify it goes back to the beginning. Choose new concerns: fine lines and wrinkles, dullness, and uneven texture, and a new skin type: combination. Ensure that the suggestions given are not the same set as the first round. 
+ ### Skin Concern Selection
+ #### Description:
+ Verify that the skin concern choices are recognized and the next screen is shown. 
+ #### Procedure: 
+* Step 1: From the presented list of skin concerns, click on acne and blemishes, pores, and oiliness
+* Step 2: Verify the screen moves to the skin types screen.
+ #### Expected Results:
+The screen moves to the next screen after the third concern is clicked.
+ 
+ ### Skin Type Selection
+ #### Description:
+ Verify that the skin type choice is recognized and the next screen is shown.
+ #### Procedure: 
+* Step 1: From the presented list of skin types, click on sensitive from the list.
+* Step 2: Verify the screen moves to the oil cleansers screen.
+ #### Expected Results:
+The screen moves to the next screen after the type is clicked.
+ 
+ ### Product Selection
+ #### Description:
+ Ensure the mouse hovering and clicking are detected as expected. 
+ #### Procedure: 
+* Step 1: Hover over the image of Anua Oil Cleanser.
+* Step 2: Hover over the image of Kose Oil Cleanser.
+* Step 3: Verify that each hover box displays unique information. 
+* Step 3: Click on the Anua Cleanser from the list.
+* Step 4: Verify that the screen moves to the cleanser screen. 
+* Step 4: Repeat for every product screen, selecting Youth to the People cleanser, Tower 28 toner, SKIN 1004 serum, Dr. G moisturizer, and SKIN 1004 sunscreen. 
+ #### Expected Results:
+The hover boxes display ingredients specified for each product when the image is hovered over and when the text is selected, the next product screen is shown. 
+ 
+ ### Final Routine
+ #### Description:
+ Ensure the choices have been recorded and are displayed as expected. 
+ #### Procedure: 
+* Step 1: Verify that the chosen products are present with images, names, and prices
+* Step 2: Hover over the images. 
+* Step 3: Verify that the ingredients are still shown and are unique to the suggestion.
+ #### Expected Results:
+ The products chosen during the product selection test should be shown with unique ingredients in the hover boxes. 
+
+ ### Exit Button
+ #### Description:
+ Verify the mouse click is registered and the program exits. 
+ #### Procedure: 
+* Step 1: Click on the exit button at the bottom of the screen. 
+* Step 2: Check that the application closes. 
+ #### Expected Results:
+ The program closes when the exit button is clicked. 
+
+ ### Return to Start Button
+ #### Description:
+ Verify that the button click is registered and the program starts again. 
+ #### Procedure: 
+* Step 1: Select the "Return to Start" button.
+* Step 2: Check that the program starts again. 
+* Step 3: Choose three new concerns: fine lines and wrinkles, dullness, and uneven texture.
+* Step 4: Choose a new skin type: combination. 
+* Step 5: Verify that suggestions given are not the same as the first round. 
+ #### Expected Results:
+ The return to start button sends the user to another welcome screen. A new set of suggestions is shown based on the new concerns and skin type selected. 
+
