@@ -48,7 +48,7 @@ class Hover:
         
         if self.hovered:
 
-            hover_rect = pygame.Rect (self.rect.right-100, self.rect.top-60, 350, 220)
+            hover_rect = pygame.Rect (self.rect.right-100, self.rect.top - 100, 350, 150)
             pygame.draw.rect (surface, hover_color, hover_rect)
             
             pop_up_font = pygame.font.SysFont ("rockwell", 13)

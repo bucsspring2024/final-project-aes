@@ -13,7 +13,7 @@ Arlene Shaji
 
 ## Project Description
 
-<< Give an overview of your project >>
+The program asks the users about their main skin concerns and skin type and generates product suggestions based on this information. The users can choose products to add to their final routine using the ingredient and price information displayed. 
 
 ***    
 
@@ -49,9 +49,9 @@ Arlene Shaji
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Welcome Message  | Program is launched and the title is displayed as "Welcome to Skincare Genie" and appears for 2 seconds  |
-|  2                   | Skin Concern Selection | Click on three skin concerns from the list and after the final is chosen, it switches to the next screen.      |
-| 3                    | Skin Type Selection    |  Click on one skin type from the list and after it is chosen, it switches to the next screen. 
-| 4                    | Product Selection    |  Hover over a product image and make sure the ingredients are specific to each product. Click on one product from the list and after it is chosen, it switches to the next screen. Repeat for every product screen. 
-| 5                    | Final Routine    |  All of the chosen products are displayed. Hover over the images to make sure the pop-up boxes are displayed with specific ingredients. 
+|  2                   | Skin Concern Selection | Click on acne and blemishes, pores, and oiliness from the list and after the final is chosen, it switches to the next screen.      |
+| 3                    | Skin Type Selection    |  Click on sensitive from the list and after it is chosen, it switches to the next screen. 
+| 4                    | Product Selection    |  Hover over the image of the Anua oil cleanser and the Kose oil cleanser and make sure the ingredients are specific to each product. Click on the Anua cleanser from the list and after it is chosen, it switches to the next screen. Repeat for every product screen choosing products in this order: Youth to the People cleanser, Tower 28 toner, SKIN 1004 serum, Dr. G moisturizer, and SKIN 1004 sunscreen. 
+| 5                    | Final Routine    |  All of the chosen products listed in step 4 are displayed. Hover over the images to make sure the pop-up boxes are displayed with specific ingredients. 
 | 6                    | Exit Button  |  Click on the Exit button and verify the application closes. 
-| 7                    | Return to Start Button  |  Click on the Return to Start button and verify goes back to the beginning and gives completely new suggestions. 
+| 7                    | Return to Start Button  |  Click on the Return to Start button and verify it goes back to the beginning. Choose new concerns: fine lines and wrinkles, dullness, and uneven texture, and a new skin type: combination. Ensure that the suggestions given are not the same set as the first round. 

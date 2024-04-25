@@ -1,6 +1,7 @@
 from src.utility import Utility
 from src.hover import Hover
 from src.button import Button
+from src.view import View
 import pygame
 import os
 import json
@@ -12,8 +13,7 @@ class Skincare_Genie:
     Attributes:
         screen: Pygame display surface
         dimensions (tuple): Width and height of the screen.
-        width (int): Width of the screen.
-        height (int): Height of the screen.
+        view: View object for displaying screen. 
         title_font: Pygame font object for the title. 
         prompt_font: Pygame font object for the prompts.
         text_font: Pygame font object for general text.
@@ -34,11 +34,9 @@ class Skincare_Genie:
         """Initializes the Skincare_Genie class
         """
         pygame.init ()
-           
         self.screen = pygame.display.set_mode ()
-        self.dimensions = pygame.display.get_window_size()
-        self.width = self.dimensions [0]
-        self.height = self.dimensions [1]
+        self.dimensions = pygame.display.get_window_size ()
+        self.view = View (self.dimensions [0], self.dimensions [1])
         self.title_font = pygame.font.SysFont ('rockwell', 50)
         self.prompt_font = pygame.font.SysFont ('rockwell', 40)
         self.text_font = pygame.font.SysFont ('rockwell', 35)
@@ -51,15 +49,13 @@ class Skincare_Genie:
        
         self.concern_buttons = []
         self.type_buttons = []
-        self.oil_cleanser_buttons = []       
-        self.cleanser_buttons = []
        
         self.create_concern_buttons ()
         self.create_type_buttons ()
         
         self.selected_concerns = set ()
         self.selected_type = None
-        self.clicked_button = None
+      
         self.selected_products = []
 
     def create_concern_buttons (self):
@@ -67,32 +63,32 @@ class Skincare_Genie:
         """
         
         for i, concern in enumerate(self.skin_concerns[:2]):
-            x = (self.width //5)- (Utility.BUTTON_WIDTH)
-            y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5)- (Utility.BUTTON_WIDTH)
+            y = (i + 5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = concern
            
             self.concern_buttons.append(Button(text, (x, y), (Utility.BUTTON_WIDTH, Utility.BUTTON_HEIGHT)))
        
         for i, concern in enumerate(self.skin_concerns[2:4]):
-            x = (self.width //5) * 2- (Utility.BUTTON_WIDTH)
-            y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5) * 2- (Utility.BUTTON_WIDTH)
+            y = (i + 5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = concern
            
             self.concern_buttons.append(Button(text, (x, y), (Utility.BUTTON_WIDTH, Utility.BUTTON_HEIGHT)))
            
         for i, concern in enumerate(self.skin_concerns[4:6]):
-            x = (self.width //5) * 3.25 - (Utility.BUTTON_WIDTH)
-            y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5) * 3.25 - (Utility.BUTTON_WIDTH)
+            y = (i + 5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = concern
            
             self.concern_buttons.append(Button(text, (x, y), (Utility.BUTTON_WIDTH, Utility.BUTTON_HEIGHT)))
            
         for i, concern in enumerate(self.skin_concerns[6:8]):
-            x = (self.width //5) * 4.5 - (Utility.BUTTON_WIDTH)
-            y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5) * 4.5 - (Utility.BUTTON_WIDTH)
+            y = (i + 5) * (self.dimensions [1]  // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = concern
            
@@ -103,24 +99,24 @@ class Skincare_Genie:
         """
 
         for i, type in enumerate(self.skin_types[:2]):
-            x = (self.width //5) - (Utility.BUTTON_WIDTH//2) + 150
-            y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5) - (Utility.BUTTON_WIDTH//2) + 150
+            y = (i + 5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = type
            
             self.type_buttons.append(Button(text, (x, y), (Utility.BUTTON_WIDTH, Utility.BUTTON_HEIGHT)))
-       
+        
         for i, type in enumerate(self.skin_types[2:3]):        
-            x = (self.width //5) * 2 - (Utility.BUTTON_WIDTH//2) + 150
-            y = (i + 5.5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+            x = (self.dimensions [0] //5) * 2 - (Utility.BUTTON_WIDTH//2) + 150
+            y = (i + 5.5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
            
             text = type
            
             self.type_buttons.append(Button(text, (x, y), (Utility.BUTTON_WIDTH, Utility.BUTTON_HEIGHT)))
    
         for i, type in enumerate(self.skin_types[3:5]):
-                x = (self.width //5) * 3 - (Utility.BUTTON_WIDTH//2) + 150
-                y = (i + 5) * (self.height // (len(self.skin_concerns) + 1)) + 50 + 30 * i
+                x = (self.dimensions [0] //5) * 3 - (Utility.BUTTON_WIDTH//2) + 150
+                y = (i + 5) * (self.dimensions [1] // (len(self.skin_concerns) + 1)) + 50 + 30 * i
             
                 text = type
             
@@ -130,25 +126,21 @@ class Skincare_Genie:
         """Run the Skincare Genie program.
         """
         self.screen.fill(Utility.CREAM)
-        welcome_text = self.title_font.render("Welcome to Skincare Genie", True, "black")
-        welcome_box = welcome_text.get_rect(center=(self.width // 2, self.height//2))
-        self.screen.blit(welcome_text, welcome_box)
+        self.view.draw_text("Welcome to Skincare Genie", self.title_font, "black", (self.dimensions[0] // 2, self.dimensions [1]//2))
         pygame.display.flip ()
         pygame.time.delay (2000)
+        
         self.concerns_run ()
        
     def concerns_run(self):
         """Run the skin concerns selection screen. 
         """
         self.screen.fill(Utility.CREAM)
-        concerns_prompt = self.prompt_font.render("Choose three skin concerns you want to address", True, "black")
-        concerns_box = concerns_prompt.get_rect(center=(self.width // 2, self.height//2 - 100))
-        self.screen.blit(concerns_prompt , concerns_box)
+        self.view.draw_text("Choose three skin concerns you want to address", self.text_font, "black",(self.dimensions[0] // 2, self.dimensions [1]//2 - 100))
                
         for button in self.concern_buttons:
-            button.draw_prompt_buttons(self.screen, text_font = self.text_font)
-               
-        self.prompt_displayed = True    
+            button.draw_prompt_buttons(self.screen, self.text_font)
+      
         pygame.display.flip ()
            
         running = True
@@ -170,12 +162,10 @@ class Skincare_Genie:
         """Run the skin type selection screen. 
         """
         self.screen.fill(Utility.CREAM)
-        type_prompt = self.prompt_font.render("What is your skin type?", True, "black")
-        type_box = type_prompt.get_rect(center=(self.width // 2, self.height//2 - 100))
-        self.screen.blit(type_prompt,type_box)
+        self.view.draw_text("What is your skin type?", self.text_font, "black", (self.dimensions[0] // 2, self.dimensions [1]//2 - 100))
            
         for button in self.type_buttons:
-            button.draw_prompt_buttons(self.screen, text_font = self.text_font)
+            button.draw_prompt_buttons(self.screen, self.text_font)
                
         self.prompt_displayed = True    
         pygame.display.flip ()
@@ -221,9 +211,7 @@ class Skincare_Genie:
         hover_areas = []
             
         for i, text in enumerate(instruction_text):
-            text_surface = self.instructions_font.render(text, True, "black")
-            text_rect = text_surface.get_rect(center=(self.width // 2, 50 + i * 50))
-            self.screen.blit(text_surface, text_rect)
+            self.view.draw_text (text, self.prompt_font, "black", (self.dimensions [0] // 2, 50 + i * 50))
                 
         for i, suggestion in enumerate (suggestions):
 
@@ -542,9 +530,8 @@ class Skincare_Genie:
         suggestions = self.selected_products
         product_buttons, hover_areas = self.create_product_buttons (suggestions, Utility.GREY, 400, 220, instruction_text)
     
-        exit_button = Button ("Exit", (self.width //2 + 270, self.height - 80), (200,50))
-        return_button = Button ("Return to Start", (self.width //2 - 500, self.height - 80), (200,50))
-        
+        exit_button = Button ("Exit", (self.dimensions [0] //2 + 270, self.dimensions [1] - 80), (200,50))
+        return_button = Button ("Return to Start", (self.dimensions [0] //2 - 500, self.dimensions [1] - 80), (200,50))
         
         while True:
                 for event in pygame.event.get ():
