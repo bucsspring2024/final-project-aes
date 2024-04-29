@@ -1,9 +1,8 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14588375&assignment_repo_type=AssignmentRepo)
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# Skincare Wizard
-## CS110 Final Project  << Spring, 2024 >>
+# Skincare Genie
+## CS110 Final Project - Spring, 2024 
 
 ## Team Members
 
@@ -32,11 +31,12 @@ The program asks the users about their main skin concerns and skin type and gene
 
 ### Features
 
-1. Personalizes products to skin concerns and skin types 
-2. Images for each product 
-3. Pop up boxes when hovering over images showing ingredients
-4. Allows users to choose their own products 
-5. Final screen showing all chosen products and gives option to restart
+1. Reads json file containing potential skincare suggestions and their corresponding skin concerns and skin types
+2. Personalizes products to skin concerns and skin types 
+3. Images for each product 
+4. Pop up boxes when hovering over images showing ingredients
+5. Allows users to choose their own products 
+6. Final screen showing all chosen products and gives option to restart
 
 ### Classes
 
